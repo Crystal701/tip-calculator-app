@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Cloning a Tip calculator app">
+  <meta name="author" content="Crystal Koo">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Tip Calculator.css">
+  <link rel="stylesheet" href="Tip Calculator Responsive View.css">
+
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <header>
+    <h1>SPLI<br>
+      TTER</h1>
+  </header>
+
+  <main>
+    <section class="calculator-sect">
+      <div class="bill-container">
+        <div class="bill-sub-error">
+          <p>Bill</p>
+          <p class="bill-error">Enter valid amount</p>
+        </div>
+
+        <input type="number" id="bill" name="bill" placeholder="0">
+        <p class=" dollarsign">$</p>
+        <br>
+      </div>
+
+      <div class="tip-container">
+        <p>Select Tip %</p>
+        <div class="tip">
+
+          <label for="five-pct">
+            <input type="radio" name="select-tip" id="five-pct" value="5">
+            <span>5%</span>
+          </label>
+
+          <label for="ten-pct">
+            <input type="radio" name="select-tip" id="ten-pct" value="10">
+            <span>10%</span>
+          </label>
+
+          <label for="fiftn-pct">
+            <input type="radio" name="select-tip" id="fiftn-pct" value="15">
+            <span>15%</span>
+          </label>
+
+          <label for="twenty-five-pct">
+            <input type="radio" name="select-tip" id="twenty-five-pct" value="25">
+            <span>25%</span>
+          </label>
+
+          <label for="fifty-pct">
+            <input type="radio" name="select-tip" id="fifty-pct" value="50">
+            <span>50%</span>
+          </label>
+
+          <input type="number" id="custom-tip" name="custom-tip" placeholder="Custom">
+        </div>
+      </div>
+
+      <div class="pax-container">
+        <div class="pax-sub-error">
+          <p>Number of People</p>
+          <p class="pax-error">Can't be zero</p>
+        </div>
+        <input type="number" id="paxnum" name="paxnum" placeholder="0">
+        <img class="person-icon" src="images/icon-person.svg" alt="person icon">
+        <br>
+      </div>
+    </section>
+
+    <section class="sum-sect">
+      <div class="sum">
+        <div class="tip-amount">
+          <p>Tip Amount<br>
+            <span>/ person</span>
+          </p>
+
+          <p class="tipperpax">$0.00</p>
+        </div>
+
+        <div class="total">
+          <p>Total<br>
+            <span>/ person</span>
+          </p>
+
+          <p class="totalsum">$0.00</p>
+        </div>
+      </div>
+
+      <button class="reset" disabled>Reset</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Crystal Koo</a>.
+    </div>
+  </footer>
+
+
+  <script src="Tip Calculator.js"></script>
+</body>
+
+</html>
